@@ -40,9 +40,11 @@ builder.Services.AddScoped<IStaffDal, EfStaffDal>();
 builder.Services.AddScoped<IServiceService, ServiceManager>();
 builder.Services.AddScoped<IServiceDal, EfServiceDal>();
 
-
 builder.Services.AddScoped<IAboutService, AboutManager>();
 builder.Services.AddScoped<IAboutDal, EfAboutDal>();
+
+builder.Services.AddScoped<IBookingService, BookingManager>();
+builder.Services.AddScoped<IBookingDal, EfBookingDal>();
 
 //builder.Services.AddScoped<>
 

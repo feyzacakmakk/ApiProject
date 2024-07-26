@@ -16,11 +16,12 @@ namespace HotelProject.DataAccessLayer.Conccrete
 		{
 			optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB; initial Catalog=RapidApiDb; integrated Security=true;");
 		}
-		public DbSet<Room> Rooms { get; set; }
-		public DbSet<Service> Services { get; set; }
-		public DbSet<Staff> Staffs { get; set; }
-		public DbSet<Subscribe> Subscribes { get; set; }
-		public DbSet<Testimonial> Testimonials { get; set; }
-		public DbSet<About> Abouts { get; set; }
+		public DbSet<Room>? Rooms { get; set; }
+		public DbSet<Service>? Services { get; set; }
+		public DbSet<Staff>? Staffs { get; set; }
+		public DbSet<Subscribe>? Subscribes { get; set; }
+		public DbSet<Testimonial>? Testimonials { get; set; }
+		public DbSet<About>? Abouts { get; set; }
+		public DbSet<Booking>? Bookings { get; set; }
 	}
 }
